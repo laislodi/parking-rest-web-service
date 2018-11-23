@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Novo Cliente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <!-- Primeiro conteiner -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-9">
+                <h1 class="text-center">Controle de Fluxo de Veículos</h1>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-10">
+                        <p class="py-2">Número de Vagas: </p>
+                    </div>
+                    <div class="col-2">
+                        <p class="py-2">50</p>
+                    </div>
+                    <div class="row">
+                        <p class="py-2">04/11/2018 19:20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <h2 class="text-center">Cadastro de Clientes</h2>
+        <hr/>
+        <form method="get" id="form-new-client">
+            <div class="form-row">
+                <!-- Parte Cliente -->
+                <div class="col-6">
+                    <h3 class="text-center">Cliente</h3>
+                    <div class="form-group">
+                        <label for="input-client-name">Nome:</label>
+                        <input type="text" class="form-control" id="input-client-name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="input-client-cpf">CPF:</label>
+                        <input type="text" class="form-control" id="input-client-cpf" required maxlength="14" />
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="input-client-ddd">DDD:</label>
+                            <input type="text" class="form-control" id="input-client-ddd" maxlength="3" required />
+                        </div>
+                        <div class="col-9">
+                            <label for="input-client-ddd">Telefone:</label>
+                            <input type="text" class="form-control" id="input-client-telephone" maxlength="10" required />
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="col-1"></div>-->
+                <div class="col-6">
+                    <h3 class="text-center">Veículo</h3>
+                    <div class="form-group">
+                        <label for="input-vehicle-plate">Placa:</label>
+                        <input type="text" class="form-control" id="input-vehicle-plate" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="select-vehicle-model">Modelo:</label>
+                        <select class="custom-select" id="select-vehicle-model">
+                            <option selected value="0">Selecione um modelo...</option>
+                            <option value="1">Ford</option>
+                            <option value="2">FIAT</option>
+                            <option value="3">Wolkswagem</option>
+                            <option value="4">Peugeot</option>
+                            <option value="5">Toyota</option>
+                            <option value="6">BWM</option>
+                            <option value="7">Outra</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select-vehicle-color">Cor:</label>
+                        <select class="custom-select" id="select-vehicle-color">
+                            <option selected value="0">Selecione uma cor...</option>
+                            <option value="1">Preto</option>
+                            <option value="2">Prato</option>
+                            <option value="3">Branco</option>
+                            <option value="4">Vermelho</option>
+                            <option value="5">Amarelo</option>
+                            <option value="6">Rosa</option>
+                            <option value="7">Outra</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary" type="button" id="btn-save">Salvar</button>
+                    <button class="btn btn-primary" type="button" id="btn-clean">Limpar</button>
+                    <button class="btn btn-primary" type="button" id="btn-other">Outro</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>RODAPÉ SUPER BACANA</p>
+    </footer>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!--<script src="/js/client.js"></script>-->
+    <!--<script src="/js/main.js"></script>-->
+    <script src="/js/new.client.main.js"></script>
+</body>
+</html>

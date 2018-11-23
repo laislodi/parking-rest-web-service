@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estacionamento</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<!-- Primeira container -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-9">
+                <h1 class="text-center">Controle de Fluxo de Veículos</h1>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-10">
+                        <p class="py-2">Número de Vagas: </p>
+                    </div>
+                    <div class="col-2">
+                        <p class="py-2">50</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="py-2">04/11/2018 19:20</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <h2>Buscar Clientes</h2>
+        </div>
+        <form method="get" id="form-search-client">
+            <div class="row">
+                <div class="col-3">
+                    <label for="select-document">Buscar por:</label>
+                    <select class="custom-select" id="select-document">
+                        <option selected value="document">CPF</option>
+                        <option value="name">Nome</option>
+                    </select>
+                </div>
+                <div class="col-5">
+                    <label for="value-of">Valor:</label>
+                    <input type="text" id="value-of" class="form-control" required />
+                </div>
+                <div class="col-3 align-bottom">
+                    <button class="btn btn-primary" type="button" id="btn-form">Buscar</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="py-5">
+            <table class="table table-striped" id="client-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="py-4">
+            <p class="par align-self-center"></p>
+        </div>
+
+    </div><!-- Fim do container -->
+    <div class="text-center">
+        <button class="btn btn-primary">Voltar</button>
+        <button class="btn btn-primary">Novo</button>
+        <button class="btn btn-primary">Editar</button>
+        <button class="btn btn-primary" type="reset">Limpar</button>
+        <button class="btn btn-primary" type="button">Sair</button>
+    </div>
+
+    <footer>
+        <p>RODAPÉ SUPER BACANA</p>
+    </footer>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
